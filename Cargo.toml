@@ -1,0 +1,13 @@
+[package]
+name = "specta-sandbox"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+specta = { git = "https://github.com/specta-rs/specta", features = ["chrono", "uuid", "url", "derive", "export"] }
+specta-typescript = { git = "https://github.com/specta-rs/specta" }
+specta-util = { git = "https://github.com/specta-rs/specta" }
+
+anyhow = "*"
+
+serde = { version = "*", features = ["derive"] }
