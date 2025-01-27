@@ -17,7 +17,7 @@ mod tests {
     #[test]
     fn test_simple_export() -> Result<()> {
         let types_path = std::path::Path::new("priv/test/types.ts");
-        Typescript::default().export_to(&types_path, &specta::export())?;
+        Typescript::default().export_to(types_path, &specta::export())?;
         Ok(())
     }
 
